@@ -10,6 +10,8 @@ sudo systemctl stop ssh && sudo ufw deny 22
 rsync -e "ssh -i ~/.ssh/id_rsa -o IdentitiesOnly=yes" -avz --rsync-path="sudo rsync" /var/www/html/website/website_1/ pi5:/var/www/
 
 ## Push an existing repository from the command line
+git config --global user.email "lienhartm8@gmail.com"
+git config --global user.name "lienhartm"
 git remote add origin git@github.com:lienhartm/Website.git
 git branch -M main
 git push -u origin main
