@@ -24,7 +24,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="./favicon_io/site.webmanifest" integrity="sha256-" crossorigin="anonymous">
+    <link rel="manifest" href="./favicon_io/site.webmanifest" integrity="sha256-"  crossorigin="anonymous">
     <!--#-->
     <title>LM</title>
     <!--#-->
@@ -39,7 +39,22 @@
         }
     </script>
     <!--#-->
-    <script src="./script/script.js" integrity="sha256-" crossorigin="anonymous"></script>
+    <script src="./script/script.js" integrity="sha256-" crossorigin="anonymous" defer></script>
+    <!--#-->
+    <!--#-->
+    <!-- EMAILJS -->    
+    <!-- import script -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js' integrity="sha256-" crossorigin="anonymous" defer></script>
+    <!--<script type='text/javascript'>emailjs.init('ICl1Gr-2iThwXuBMD')</script>-->
+    <script type='text/javascript'>emailjs.init('2vIDqXlVWi6E9KQ15')</script>
+    <script type="text/javascript">
+        (function() {
+        // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "2vIDqXlVWi6E9KQ15",
+            });
+        })();
+    </script>
     <!--#-->
 </head>
 <body>

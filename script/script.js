@@ -1,27 +1,25 @@
 'use strict'
 
-window.onload = function() {
+window.onload = function () {
     document.body.innerHTML = logo(10)
-    document.getElementById('animate').addEventListener("click", function() {
+    document.getElementById('animate').addEventListener("click", function () {
         // myMove();
         myClick();
     });
-    document.addEventListener('click', function(event) {
+    document.addEventListener('click', function (event) {
         document.getElementById('content').style.backgroundColor = '#fff';
         if (!event.target || !event.target.id) {
             return;
         } else if (event.target && event.target.id && event.target.id.startsWith('chart-')) {
             const index = event.target.id.split('-')[1];
             chart(Number(index));
+        } else if (event.target && event.target.id && event.target.id.startsWith('page-')) {
+            const index = event.target.id.split('-')[1];
+            page(Number(index));
         } else if (event.target && event.target.id && event.target.id.startsWith('site')) {
             window.location.href = 'https://lienhart-michael.dynamic-dns.net';
-        } else if (event.target && event.target.id && event.target.id.startsWith('form')) {
-            console.log('formulaire de contact');
-        } else if (event.target && event.target.id && event.target.id.startsWith('cv')) {
-            window.location.href = 'https://lienhartm.github.io/CurriculumVitae/';
         }
     });
-
 };
 
 function logo(m) {
@@ -41,7 +39,7 @@ function logo(m) {
                         <rect x="${30 * m}" y="${10 * m}" width="${5 * m}"  height="${5 * m}"  fill="#989898" />
                         <rect x="${35 * m}" y="${5 * m}"  width="${5 * m}"  height="${30 * m}" fill="#989898" />
                         <!-- Ponctuation . -->
-                        <rect x="${15* m}"  y="${30 * m}" width="${5 * m}" height="${5 * m}" fill="#c8c8c8" />
+                        <rect x="${15 * m}"  y="${30 * m}" width="${5 * m}" height="${5 * m}" fill="#c8c8c8" />
                 </svg>
             </div>
         </div>
@@ -53,11 +51,7 @@ function website() {
     return `
         <div class="container bordereau">
             <div class="icon">&#128679;</div> <!-- Icône de construction -->
-<<<<<<< HEAD
             <h2>Page en construction</h2>
-=======
-            <h1>Page en construction</h1>
->>>>>>> 147add5bb82cdfbf12527e83fa8ce97466ba0f7c
             <p>Nous travaillons dur pour rendre cette page disponible bientôt.</p>
             <div class="message">Merci de votre patience !</div>
         </div>
@@ -69,11 +63,13 @@ function header() {
     return `
         <header>
             <hr>
-            <nav>Présentation</nav>
+            <nav id="page-1">Présentation</nav>
             <hr>
-            <nav>Recherche</nav>
+            <nav id="page-2">Parcours</nav>
             <hr>
-            <nav>Contact</nav>
+            <nav id="page-3">Projets</nav>
+            <hr>
+            <nav id="page-4">Contact</nav>
             <hr>
         </header>
     `;
@@ -82,7 +78,7 @@ function header() {
 function chart(x) {
     var chart = '';
     var main = document.getElementById('content');
-    switch(x) {
+    switch (x) {
         case 0:
             chart = `
                 <h2>Mentions légales</h2>
@@ -201,19 +197,15 @@ function chart(x) {
                         <tr>
                             <th>Test</th>
                             <th>Service</th>
-                            <th>Statut</th>
                             <th>Résultat / Lien</th>
                         </tr>
                     </thead>
                     <tbody id="results">
-                        <tr><td>HTML</td><td>W3C Validator</td><td class="pending">⏳</td><td><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Flienhart-michael.dynamic-dns.net%2F" target="_blank">Voir rapport</a></td></tr>
-                        <tr><td>CSS</td><td>W3C CSS Validator</td><td class="pending">⏳</td><td><a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Flienhart-michael.dynamic-dns.net%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=fr" target="_blank">Voir rapport</a></td></tr>
-                        <tr><td>Observatory</td><td>Mozilla Observatory</td><td class="pending">⏳</td><td><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=lienhart-michael.dynamic-dns.net#history" target="_blank">Voir rapport</a></td></tr>
-                        <tr><td>Security Headers</td><td>Probely</td><td class="pending">⏳</td><td><a href="https://probely.com/sh/?utm_campaign=Security%20Headers&utm_source=Security%20Headers&utm_medium=Display&utm_content=A" target="_blank">Voir rapport</a></td></tr>
-                        <tr><td>SSL</td><td>SSL Labs</td><td class="pending">⏳</td><td><a href="https://www.ssllabs.com/ssltest/analyze.html?d=lienhart-michael.dynamic-dns.net" target="_blank">Voir rapport</a></td></tr>
-                        <tr><td>UpGuard</td><td>Security Score</td><td class="pending">⏳</td><td><a href="https://www.upguard.com/instant-security-score/report?c=https%3A%2F%2Flienhart-michael.dynamic-dns.net%2F" target="_blank">Voir rapport</a></td></tr>
-                        <tr><td>Performance</td><td>PageSpeed Insights</td><td class="pending">⏳</td><td><a href="https://pagespeed.web.dev/analysis/https-lienhart-michael-dynamic-dns-net/1o2m8qoijq?form_factor=desktop" target="_blank">Voir rapport</a></td></tr>
-                        <tr><td>WebPageTest</td><td>Catchpoint</td><td class="pending">⏳</td><td><a href="https://www.catchpoint.com/webpagetest/results?publicUrl=https%3A%2F%2Fpublic.catchpoint.com%2FUI%2FEntry%2FWPTITP%2FARK3-D-D-B2AMasjeFn4aiAAA-N" target="_blank">Voir rapport</a></td></tr>
+                        <tr><td>HTML</td><td>W3C Validator</td><td><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Flienhart-michael.dynamic-dns.net%2F" target="_blank">Voir rapport</a></td></tr>
+                        <tr><td>CSS</td><td>W3C CSS Validator</td><td><a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Flienhart-michael.dynamic-dns.net%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=fr" target="_blank">Voir rapport</a></td></tr>
+                        <tr><td>Observatory</td><td>Mozilla Observatory</td><td><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=lienhart-michael.dynamic-dns.net#history" target="_blank">Voir rapport</a></td></tr>
+                        <tr><td>SSL</td><td>SSL Labs</td><td><a href="https://www.ssllabs.com/ssltest/analyze.html?d=lienhart-michael.dynamic-dns.net" target="_blank">Voir rapport</a></td></tr>
+                        <tr><td>UpGuard</td><td>Security Score</td><td><a href="https://www.upguard.com/instant-security-score/report?c=https%3A%2F%2Flienhart-michael.dynamic-dns.net%2F" target="_blank">Voir rapport</a></td></tr>
                     </tbody>
                     <tfooter>
                         <tr>
@@ -229,6 +221,146 @@ function chart(x) {
     pendingTests();
 }
 
+function page(x) {
+    var page = '';
+    var main = document.getElementById('content');
+    switch (x) {
+        case 1:
+            page = `
+                <h2><u>Présentation</u></h2>
+                <p>Je m’appelle <b>Michaël Lienhart</b>, développeur et passionné de technologies, avec un attrait particulier pour les systèmes concrets, utiles et maîtrisés de bout en bout.</p>
+                <br>
+                <p>Mon parcours s’est construit à la croisée du <b>développement logiciel</b>, de l’<b>électronique</b>, des <b>systèmes embarqués</b> et des <b>réseaux</b>. J’aime comprendre comment les choses fonctionnent réellement : du code qui s’exécute, au matériel qui réagit, jusqu’à l’utilisateur final. Cette approche m’a naturellement conduit à travailler sur des projets très variés, allant d’applications logicielles à des dispositifs physiques intégrant caméras, capteurs, impression, interfaces graphiques ou automatisation.</p>
+                <br>
+                <p>Je m’intéresse particulièrement aux projets où la technique sert un <b>objectif concret</b> : événementiel, médiation, mémoire, innovation locale ou industrielle. Le projet de photobooth que je développe actuellement en est un bon exemple : un système autonome, robuste, pensé pour fonctionner dans le monde réel, sans dépendre de solutions opaques ou surdimensionnées.</p>
+                <br>
+                <p>Sur ce blog, je partage :</p>
+                <ul>
+                <li>des retours d’expérience techniques,</li>
+                <li>des réflexions sur la conception logicielle et système,</li>
+                <li>des projets en cours ou aboutis,</li>
+                <li>et parfois des points de vue plus personnels sur la technologie, son usage et son sens.</li>
+                </ul>
+                <br>
+                <p>Ce blog n’a pas vocation à donner des leçons, mais à <b>documenter</b>, <b>transmettre</b> et <b>échanger</b>. Si certains contenus peuvent être utiles, inspirants ou simplement clairs pour d’autres, alors l’objectif est atteint.</p>
+                <br />
+                <p>Bonne lecture.</p>
+            `;
+            break;
+        case 2:
+            page = `
+                <h2>Parcours</h2>
+                <p>M'étant formé dans le domaine du numérique et de l’informatique, avec un parcours orienté vers le développement logiciel, les systèmes, les réseaux et la cybersécurité.</p>
+                <p>J'ai suivi le parcours Graduate – Technicien supérieur systèmes, réseaux et cybersécurité au sein de Studi Formation, me permettant de consolider des compétences en administration système, réseaux, sécurité informatique et bonnes pratiques professionnelles dans un environnement structuré.</p>
+                <p>Son parcours académique s’inscrit dans une progression cohérente au sein des métiers de l’informatique, avec une spécialisation en <b>conception, développement et tests de logiciels</b>. Il a suivi sa formation à l’<b>UHA 4.0 – Université de Haute-Alsace (Mulhouse)</b>, où il a acquis des bases solides en programmation, développement web, architecture du web et technologies modernes, dans un cadre pédagogique s’appuyant sur la <b>méthodologie Agile</b> et le <b>framework Scrum</b>.</p>
+                <p>Il dispose de compétences techniques étendues, couvrant :</p>
+                <ul>
+                <li>les langages de programmation : HTML, CSS, JavaScript, PHP, SQL, Java (notions),</li>
+                <li>les frameworks et outils : React, Next.js, Svelte, WordPress, Symfony, Spring,</li>
+                <li>les environnements et outils professionnels : Linux, Git, Docker,</li>
+                <li>la gestion de projet et le travail collaboratif : Jira, Confluence, Slack, Jitsi,</li>
+                <li>ainsi que plusieurs certifications (Pix, bases Java, bases de données, architecture du web, développement côté client).</li>
+                </ul>
+                <p>Ses expériences professionnelles dans le numérique incluent des stages en développement web et en transformation numérique, au cours desquels il a participé à la création de sites web, au développement de fonctionnalités, à l’amélioration de l’expérience utilisateur et à la collaboration avec des équipes pédagogiques et techniques.</p>
+                <p>Il a conduit et développé de nombreux projets numériques concrets, tels que des applications de gestion (devis/facturation, questionnaires, audits, tournois sportifs), des outils métiers, ainsi que des sites web fonctionnels, démontrant sa capacité à concevoir, développer et mettre en œuvre des solutions adaptées aux besoins réels.</p>
+                <p>Son profil se distingue par une forte polyvalence, une approche structurée, une capacité d’adaptation, et une volonté d’évoluer dans les métiers de l’informatique et du numérique.</p>
+            `;
+            break;
+        case 3:
+            page = `
+                <h2><u>Projets</u></h2>
+                <div class="text">
+                </div>
+                <p>D'autres petits travaux ont été rendu pour des associations ou entreprise comme :</p>
+                <ul>
+                    <li>Questionnaire - Association Caritas - HTML,CSS,JS,PHP,SQL</li>
+                    <li>CRM - Design Concept - HTML,CSS,JS,REACT,Svelt,C++,SQL</li>
+                    <li>Suivi Evenement Sportif - Hopla Cup - HTML,CSS,JS,PHP,SQL</li>
+                    <li>Gestion locative - Cavalons - HTML,CSS,JS,Go,PostgreSQL</li>
+                    <li>Gestion administrative - Génération Mouvement 68 - HTML,CSS,JS</li>
+                    <li>EasyBetMe - MonWebPro - HTML,CSS,JS,PHP,SQL</li>
+                </ul>
+                <p>Puis des projet personnel comme :</p>
+                <ul>
+                    <li>Website : Délices de nos rivières - HTML,CSS,JS</li>
+                    <li>Website : BasketBall - HTML,CSS,JS,REACT,PHP,SQL</li>
+                    <li>Jeu : MasterMind - Java Spring Boot, H2O</li>
+                    <li>Cloud : BlocNote - HTML,CSS,JS,REACT,MongoDB</li>
+                    <li>Jeu : Survivor - HTML,CSS,JS</li>
+                    <li>Mini diapo auto de pésentation : Epicur Persolo - HTML,CSS,JS</li>
+                </ul>
+                <p>Des projets FabLab' au Technistub :</p>
+                <ul>
+                    <li>Régie Makerfight</li>
+                    <li>PhotoBooth</li>
+                    <li>Makerfight</li>
+                </ul>
+            `;
+            break;
+        case 4:
+            page = `
+                <h2>Contact</h2>
+                <section class='contact'>
+                <h2>Formulaire de contact</h2>
+                <div>
+                <p>N'hésitez pas et prenez contact avec moi pour entreprendre un projet ou pour vous aider dans votre réalisation.</p>
+                </div>
+                <br />
+                <div>
+                <form id='form'>
+                <div class='form'>
+                <div class='field'>
+                <label for='from_name'>Votre nom:</label>
+                <input type='text' name='user_name' id='from_name'>
+                </div>
+                <div class='field'>
+                <label for='user_name'>Objet:</label>
+                <input type='text' name='objet' id='user_name'>
+                </div>
+                <div class='field'>
+                <label for='message'>Message:</label>
+                <br />
+                <textarea type='text' name='message' id='message' rows='4' cols='50'></textarea>
+                </div>
+                <div class='field'>
+                <label for='user_email'>Votre email:</label>
+                <input type='text' name='user_email' id='user_email'>
+                </div>
+                </div>
+                <div class='submit'>
+                <input type='submit' id='button' value='Envoyer le courriel' >
+                </div>
+                </form>
+                </div>
+                </section>
+            `;
+            break;
+    }
+    main.innerHTML = page;
+    
+    if (x === 4) {
+        const form = document.getElementById('form');
+        const btn = document.getElementById('button');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            btn.value = 'Sending...';
+
+            const serviceID = 'service_f67zgrl';
+            const templateID = 'template_0i70oag';
+
+            emailjs.sendForm(serviceID, templateID, this).then(() => {
+                btn.value = 'Send Email';
+                alert('Le message est envoyé');
+            }, (err) => {
+                btn.value = 'Send Email';
+                alert(JSON.stringify(err));
+            });
+        });
+    }
+}
+
 // Affiche footer
 function footer() {
     return `
@@ -240,7 +372,7 @@ function footer() {
                 <nav id="chart-3">Charte partenariat</nav>
                 <nav id="chart-4">Droit d'auteur</nav>
             </nav>
-            <h5 id="chart-5">&copy; 2025 LM - Validations</h5>
+            <h5 id="chart-5">LIENHART MICHAËL - 2025 LM &copy; - Validations</h5>
         </footer>
     `;
 }
@@ -248,7 +380,9 @@ function footer() {
 // Affiche section
 function main() {
     return `
-        <div id="content">${website()}</div>
+        <div id="content">
+        ${logo(10)}
+        </div>
     `;
 }
 
@@ -257,9 +391,8 @@ function webpage() {
     const body = document.querySelector('body');
     body.style.background = "#F8F8F8";
     body.innerHTML = `
-            ${logo(4)}
+            ${header()}
             <main>
-                <!--${header()}-->
                 ${main()}
             </main>
             ${footer()}
@@ -273,44 +406,7 @@ function blank() {
     webpage();
 }
 
-function myMove() {
-    let a = 10; // Taille initiale du logo
-    // Animation de la réduction du logo
-    let re = setInterval(function() {
-        if (a < 15) { // Continuer la réduction tant que a < 13
-            a++; // Réduire la taille
-            document.body.innerHTML = logo(a); // Mettre à jour le logo avec la nouvelle taille
-        } else {
-            clearInterval(re); // Arrêter l'intervalle une fois la taille atteinte
-            movelogo();
-        }
-    }, 100); // Réduction toutes les 100ms
-    
-    function movelogo() {
-        // Animation du mouvement du logo
-        let id = setInterval(function() {
-            if (a > 6) {
-                a--;
-                document.body.innerHTML = logo(a); // Mettre à jour le logo avec la nouvelle taille
-            } else {
-                clearInterval(id); // Arrêter l'animation
-                setTimeout(blank, 500); // Charger la page après 500ms
-            }
-        }, 100); // Déplacement toutes les 5ms
-    }
-}
-
 function myClick() {
     blank();
 }
 
-function pendingTests() {
-    // Simulation simple : on "valide" automatiquement les tests après 2 secondes
-    setTimeout(() => {
-        document.querySelectorAll('.pending').forEach(cell => {
-        cell.textContent = "✅ OK";
-        cell.classList.remove('pending');
-        cell.classList.add('ok');
-        });
-    }, 2000);
-}
