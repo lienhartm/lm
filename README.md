@@ -5,7 +5,21 @@
 >
 >## Synthèse du site web « LM – Lienhart Michaël »
 >
->Le site **LM – Lienhart Michaël** est un site web personnel professionnel conçu comme une **vitrine technique et éditoriale**, mettant en valeur le parcours, les compétences et les projets de son auteur dans les domaines du **développement logiciel**, des **systèmes**, des **réseaux** et des **applications numériques**.
+>Le site web de Michaël Lienhart est un site personnel et professionnel dédié à la présentation de son parcours, de ses projets et de ses services en développement logiciel, systèmes, réseaux et applications. Il met l’accent sur la transparence, la maîtrise technique et la sobriété :
+>
+>Auto-hébergé (initialement) et désormais publié via GitHub Pages, ce qui garantit un contrôle total sur le code et l’infrastructure.
+>
+>Indépendant des frameworks lourds, utilisant principalement HTML, CSS et JavaScript, pour une navigation rapide et légère.
+>
+>Structuré et clair, avec un header, un contenu principal dynamique et un footer contenant les mentions légales, la politique de confidentialité et la charte de droits d’auteur.
+>
+>Intègre un logo animé SVG, des sections interactives pour la présentation, le parcours, les projets et le contact, avec un formulaire fonctionnel envoyé via EmailJS.
+>
+>Respecte les bonnes pratiques web : balises meta, Open Graph, schema.org pour le référencement, accessibilité et partage sur les réseaux sociaux.
+>
+>Contenu orienté sur la documentation et le partage de connaissances, illustrant des projets personnels, associatifs et professionnels dans le numérique et le développement logiciel.
+>
+>En résumé, le site reflète l’approche de son auteur : rigueur technique, polyvalence et volonté de transmettre des connaissances dans un format simple, efficace et esthétique.
 >
 >### Objectifs du site
 >
@@ -24,6 +38,7 @@
 >* Le contenu est injecté dynamiquement dans le DOM (`innerHTML`)
 >* La navigation s’effectue sans rechargement de page
 >* Les sections principales sont accessibles via un menu clair :
+>  
 >  * Présentation
 >  * Parcours
 >  * Projets
@@ -88,14 +103,9 @@
 >
 >---
 >
->## GITHUB PAGES
+>## GITHUB & GITHUB PAGES
 >
->    GitHub Pages is designed to host your personal, organization, or project pages from a GitHub repository.
->
->    + [This site is live](https://lienhartm.github.io/Website/)
->
->## GITHUB
->
+>    + [This site is live](https://lienhartm.github.io/Website/)>
 >    + [GitHub](https://github.com/lienhartm)
 >
 >#### LM - LIENHART MICHAEL - 2026
