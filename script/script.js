@@ -85,13 +85,9 @@ function chart(x) {
                 <h2>Mentions légales</h2>
                 <ul>
                     <li>Editeur du site</li>
-                    <p>Nom : <b>Auto-entrepreneur</b><br>
-                    Pays d'activité : <b>France</b><br>
-                    Site web : <i id='site'>https://lienhart-michael.dynamic-dns.net</i><br>
-                    Adresse e-mail de contact : via le <i id="form">formulaire de contact</i></p>
+                    <p>Nom : <b>Auto-entrepreneur</b><br>Pays d'activité : <b>France</b><br>Site web : <i id='site'>https://lienhart-michael.dynamic-dns.net</i><br>Adresse e-mail de contact : via le <i id="form">formulaire de contact</i></p>
                     <li>Hébergement du site</li>
-                    <p>Hébergement : Auto-hébergé par <b id='cv'>LIENHART MICHAEL</b><br>
-                    Localisation du server : <b>France</b></p>
+                    <p>Hébergement : Auto-hébergé par <b id='cv'>LIENHART MICHAEL</b><br>Localisation du server : <b>France</b></p>
                     <li>Responsabilité</li>
                     <p>L'éditeur du site met tout en oeuvre pour assurer l'exactitude et la mise à jour des informations diffusées sur ce site. Cependant, il ne saurait être tenu responsable d'erreurs ou d'ommisions, ni des résultats pouvant être obtenus par l'usage de ces informations.</p>
                     <li>Propriété intellectuelle</li>
@@ -112,9 +108,7 @@ function chart(x) {
                     <li>Cookies et statistiques</li>
                     <p>Le site peut utiliser des cookies techniques ou analytiques afin d'améliorer la navigation et les performances. L'utilisateur peut configurer son navigateur pour refuser les cookies.</p>
                     <li>Droit d'accès, de rectification et de suppression</li>
-                    <p>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression de vos données.
-                        Pour exercer ce droit : contactez-moi via le <i id='form'>formulaire de contact</i>
-                    </p>
+                    <p>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression de vos données. Pour exercer ce droit : contactez-moi via le <i id='form'>formulaire de contact</i></p>
                     <li>Sécurité</li>
                     <p>Le site met en oeuvre des mesures techniques pour protéger les données personnelles contre l'accès non autorisé.</p>
                 </ol>
@@ -165,8 +159,7 @@ function chart(x) {
                     </p>
                     <br>
                     <li>Confidentialité et propriété</li>
-                    <p>Les codes, prototypes, ou documents produits restent la propriété de leur auteur, sauf accord écrit contraire.<br>
-                    Toute collaboration repose sur le respect mutuel des droits de chacun.</p>
+                    <p>Les codes, prototypes, ou documents produits restent la propriété de leur auteur, sauf accord écrit contraire.<br>Toute collaboration repose sur le respect mutuel des droits de chacun.</p>
                     <br>
                     <li>Ethique et transparence</li>
                     <p>Aucun projet ne sera accepté s'il implique une activité contraire à la loi, à l'éthique ou au respect de la vie privée.</p>
@@ -235,11 +228,11 @@ function page(x) {
                 <p>Son parcours académique s’inscrit dans une progression cohérente au sein des métiers de l’informatique, avec une spécialisation en <b>conception, développement et tests de logiciels</b>. Il a suivi sa formation à l’<b>UHA 4.0 – Université de Haute-Alsace (Mulhouse)</b>, où il a acquis des bases solides en programmation, développement web, architecture du web et technologies modernes, dans un cadre pédagogique s’appuyant sur la <b>méthodologie Agile</b> et le <b>framework Scrum</b>.</p>
                 <p>Il dispose de compétences techniques étendues, couvrant :</p>
                 <ul>
-                <li>les langages de programmation : HTML, CSS, JavaScript, PHP, SQL, Java (notions),</li>
-                <li>les frameworks et outils : React, Next.js, Svelte, WordPress, Symfony, Spring,</li>
-                <li>les environnements et outils professionnels : Linux, Git, Docker,</li>
-                <li>la gestion de projet et le travail collaboratif : Jira, Confluence, Slack, Jitsi,</li>
-                <li>ainsi que plusieurs certifications (Pix, bases Java, bases de données, architecture du web, développement côté client).</li>
+                    <li>les langages de programmation : HTML, CSS, JavaScript, PHP, SQL, Java (notions),</li>
+                    <li>les frameworks et outils : React, Next.js, Svelte, WordPress, Symfony, Spring,</li>
+                    <li>les environnements et outils professionnels : Linux, Git, Docker,</li>
+                    <li>la gestion de projet et le travail collaboratif : Jira, Confluence, Slack, Jitsi,</li>
+                    <li>ainsi que plusieurs certifications (Pix, bases Java, bases de données, architecture du web, développement côté client).</li>
                 </ul>
                 <p>Ses expériences professionnelles dans le numérique incluent des stages en développement web et en transformation numérique, au cours desquels il a participé à la création de sites web, au développement de fonctionnalités, à l’amélioration de l’expérience utilisateur et à la collaboration avec des équipes pédagogiques et techniques.</p>
                 <p>Il a conduit et développé de nombreux projets numériques concrets, tels que des applications de gestion (devis/facturation, questionnaires, audits, tournois sportifs), des outils métiers, ainsi que des sites web fonctionnels, démontrant sa capacité à concevoir, développer et mettre en œuvre des solutions adaptées aux besoins réels.</p>
@@ -281,37 +274,37 @@ function page(x) {
             page = `
                 <h2>Contact</h2>
                 <section class='contact'>
-                <h2>Formulaire de contact</h2>
-                <div>
-                <p>N'hésitez pas et prenez contact avec moi pour entreprendre un projet ou pour vous aider dans votre réalisation.</p>
-                </div>
-                <br />
-                <div>
-                <form id='form'>
-                <div class='form'>
-                <div class='field'>
-                <label for='from_name'>Votre nom:</label>
-                <input type='text' name='user_name' id='from_name'>
-                </div>
-                <div class='field'>
-                <label for='user_name'>Objet:</label>
-                <input type='text' name='objet' id='user_name'>
-                </div>
-                <div class='field'>
-                <label for='message'>Message:</label>
-                <br />
-                <textarea type='text' name='message' id='message' rows='4' cols='50'></textarea>
-                </div>
-                <div class='field'>
-                <label for='user_email'>Votre email:</label>
-                <input type='text' name='user_email' id='user_email'>
-                </div>
-                </div>
-                <div class='submit'>
-                <input type='submit' id='button' value='Envoyer le courriel' >
-                </div>
-                </form>
-                </div>
+                    <h2>Formulaire de contact</h2>
+                    <div>
+                        <p>N'hésitez pas et prenez contact avec moi pour entreprendre un projet ou pour vous aider dans votre réalisation.</p>
+                    </div>
+                    <br />
+                    <div>
+                        <form id='form'>
+                            <div class='form'>
+                                <div class='field'>
+                                    <label for='from_name'>Votre nom:</label>
+                                    <input type='text' name='user_name' id='from_name'>
+                                </div>
+                                <div class='field'>
+                                    <label for='user_name'>Objet:</label>
+                                    <input type='text' name='objet' id='user_name'>
+                                </div>
+                                <div class='field'>
+                                    <label for='message'>Message:</label>
+                                    <br />
+                                    <textarea type='text' name='message' id='message' rows='4' cols='50'></textarea>
+                                </div>
+                                <div class='field'>
+                                    <label for='user_email'>Votre email:</label>
+                                    <input type='text' name='user_email' id='user_email'>
+                                </div>
+                            </div>
+                            <div class='submit'>
+                                <input type='submit' id='button' value='Envoyer le courriel' >
+                            </div>
+                        </form>
+                    </div>
                 </section>
             `;
             break;
@@ -365,3 +358,5 @@ function main() {
         </div>
     `;
 }
+
+/* FIN DE SCRIPT */
