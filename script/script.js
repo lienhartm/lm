@@ -9,8 +9,15 @@ window.onload = function () {
         </div>
     `;
     document.getElementById('animate').addEventListener("click", function () {
-        // myMove();
-        myClick();
+        const body = document.querySelector('body');
+        body.style.background = "#F8F8F8";
+        body.innerHTML = `
+            ${header()}
+            <main>
+                ${main()}
+            </main>
+            ${footer()}
+        `;
     });
     document.addEventListener('click', function (event) {
         document.getElementById('content').style.backgroundColor = '#fff';
@@ -183,7 +190,7 @@ function chart(x) {
                         <br>
                         <span></span>Favoriser l'esprit de collaboration, la transmission de connaissances et l'innovation.
                     </p>
-                    <br>
+                    <br />
                     <li>Engagements du partenaire</li>
                     <p>
                         <span></span>Fournir des informations claires et exactes sur le projet.
@@ -192,7 +199,7 @@ function chart(x) {
                         <br>
                         <span></span>Reconnaître la contribution de <b id='cv'>LIENHART MICHAEL</b> dans toutes publication ou présentation liée au projet.
                     </p>
-                    <br>
+                    <br />
                     <li>Confidentialité et propriété</li>
                     <p>
                         Les codes, prototypes, ou documents produits restent la propriété de leur auteur, sauf accord écrit contraire.
@@ -475,32 +482,9 @@ function footer() {
 function main() {
     return `
         <div id="content">
-        ${logo(10)}
+            ${logo(10)}
         </div>
     `;
 }
 
-// Affiche webpage
-function webpage() {
-    const body = document.querySelector('body');
-    body.style.background = "#F8F8F8";
-    body.innerHTML = `
-            ${header()}
-            <main>
-                ${main()}
-            </main>
-            ${footer()}
-    `;
-}
-
-function blank() {
-    const body = document.querySelector('body');
-    body.style.background = "#F8F8F8";
-    body.innerHTML = "";
-    webpage();
-}
-
-function myClick() {
-    blank();
-}
-
+/* FIN DE SCRIPT */
