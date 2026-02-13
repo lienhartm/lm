@@ -107,7 +107,7 @@
 >
 >## GITHUB & GITHUB PAGES
 >
->    + [This site is live](https://lienhartm.github.io/Website/)>
+>    + [This site is live](https://lienhartm.github.io/lienhartm/LM/)>
 >    + [GitHub](https://github.com/lienhartm)
 >
 >#### LIENHART MICHAEL - 2026 - LM &copy;
