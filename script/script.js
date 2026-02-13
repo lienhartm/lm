@@ -414,7 +414,7 @@ function page(x) {
                     <div class="space"></div>
                     <h2>Supportez-moi !</h2>
                     <figure class="box">
-                        <img src='http://localhost/Website/website_1/image/buymeacoffee.png' alt='buymeacoffee' width='400'>
+                        <img src='./../image/buymeacoffee.png' alt='buymeacoffee' width='400'>
                         <figcaption>
                             <a href="https://www.buymeacoffee.com/ewzwS4LfCh" target="_blank">
                                 <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 200px !important;">
