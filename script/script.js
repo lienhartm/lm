@@ -345,12 +345,13 @@ function page(x) {
                 <div class="text"></div>
                 <p>D'autres petits travaux ont été rendu pour des associations ou entreprise comme :</p>
                 <ul>
-                    <li>Questionnaire - Association Caritas - HTML,CSS,JS,PHP,SQL</li>
-                    <li>CRM - Design Concept - HTML,CSS,JS,REACT,Svelt,C++,SQL</li>
-                    <li>Suivi Evenement Sportif - Hopla Cup - HTML,CSS,JS,PHP,SQL</li>
+                    <li>Questionnaire - Association Caritas - Docker,HTML,CSS,JS,PHP,SQL</li>
+                    <li>CRM - Design Concept - Docker,HTML,CSS,JS,REACT,Svelt,C++,SQL</li>
+                    <li>Suivi Evenement Sportif - Hopla Cup - Wordparess,HTML,CSS,JS,PHP,SQL</li>
                     <li>Gestion locative - Cavalons - HTML,CSS,JS,Go,PostgreSQL</li>
                     <li>Gestion administrative - Génération Mouvement 68 - HTML,CSS,JS</li>
-                    <li>EasyBetMe - MonWebPro - HTML,CSS,JS,PHP,SQL</li>
+                    <li>Gamification - EasyBetMe - Docker,HTML,CSS,JS,PHP,SQL</li>
+                    <li>Gestion locative - InsoliteSPA68 - HTML,CSS,JS,PHP</li>
                 </ul>
                 <p>Puis des projet personnel comme :</p>
                 <ul>
