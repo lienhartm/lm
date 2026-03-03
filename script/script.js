@@ -165,28 +165,52 @@ function chart(x) {
             break;
         case 1:
             chart = `
-                <h2>Politique de confidentialité (RGPD)</h2>
-                <ol>
-                    <li>Collecte des données personnelles</li>
-                    <p>Les informations collectées via le formulaire de contact (nom, e-mail, message) sont utilisées uniquement pour répondre aux demandes des utilisateurs. Aucune donnée personnelle n'est transmise à des tiers sans consentement explicite.</p>
-                    <li>Responsable du traitement</li>
-                    <p>Responsable : 
-                        <b id='cv'>LIENHART MICHAEL</b>
-                        , auto-entrepreneur en 
+                <h2 id="rgpd-title">Politique de confidentialité (RGPD)</h2>
+                
+                <ol aria-labelledby="rgpd-title">
+                
+                    <li id="collecte">Collecte des données personnelles</li>
+                    <p aria-labelledby="collecte">
+                        Les informations collectées via le formulaire de contact (nom, e-mail, message) sont utilisées uniquement pour répondre aux demandes des utilisateurs. 
+                        Aucune donnée personnelle n'est transmise à des tiers sans consentement explicite.
+                    </p>
+                
+                    <li id="responsable">Responsable du traitement</li>
+                    <p aria-labelledby="responsable">
+                        Responsable : 
+                        <b id="cv">LIENHART MICHAEL</b>,
+                        auto-entrepreneur en 
                         <b>France</b>
                     </p>
-                    <li>Conservation des données</li>
-                    <p>Les données envoyées par formulaire sont conservées le temps nécessaire pour traiter la demande, puis supprimées.</p>
-                    <li>Cookies et statistiques</li>
-                    <p>Le site peut utiliser des cookies techniques ou analytiques afin d'améliorer la navigation et les performances. L'utilisateur peut configurer son navigateur pour refuser les cookies.</p>
-                    <li>Droit d'accès, de rectification et de suppression</li>
-                    <p>
+                
+                    <li id="conservation">Conservation des données</li>
+                    <p aria-labelledby="conservation">
+                        Les données envoyées par formulaire sont conservées le temps nécessaire pour traiter la demande, puis supprimées.
+                    </p>
+                
+                    <li id="cookies">Cookies et statistiques</li>
+                    <p aria-labelledby="cookies">
+                        Le site peut utiliser des cookies techniques ou analytiques afin d'améliorer la navigation et les performances. 
+                        L'utilisateur peut configurer son navigateur pour refuser les cookies.
+                    </p>
+                
+                    <li id="droits">Droit d'accès, de rectification et de suppression</li>
+                    <p aria-labelledby="droits">
                         Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression de vos données.
                         Pour exercer ce droit : contactez-moi via le 
-                        <i id='form'>formulaire de contact</i>
+                        <i id="form"
+                           role="link"
+                           tabindex="0"
+                           aria-label="Accéder au formulaire de contact">
+                           formulaire de contact
+                        </i>
                     </p>
-                    <li>Sécurité</li>
-                    <p>Le site met en oeuvre des mesures techniques pour protéger les données personnelles contre l'accès non autorisé.</p>
+                
+                    <li id="securite">Sécurité</li>
+                    <p aria-labelledby="securite">
+                        Le site met en oeuvre des mesures techniques pour protéger les données personnelles contre l'accès non autorisé.
+                    </p>
+                
                 </ol>
             `;
             break;
