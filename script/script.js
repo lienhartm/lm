@@ -67,15 +67,43 @@ function logo(m) {
 function header() {
     return `
         <header>
-            <hr>
-            <nav id="page-1">Présentation</nav>
-            <hr>
-            <nav id="page-2">Parcours</nav>
-            <hr>
-            <nav id="page-3">Projets</nav>
-            <hr>
-            <nav id="page-4">Contact</nav>
-            <hr>
+            <hr aria-hidden="true">
+        
+            <nav id="page-1"
+                 role="navigation"
+                 aria-label="Aller à la section Présentation"
+                 tabindex="0">
+                Présentation
+            </nav>
+        
+            <hr aria-hidden="true">
+        
+            <nav id="page-2"
+                 role="navigation"
+                 aria-label="Aller à la section Parcours"
+                 tabindex="0">
+                Parcours
+            </nav>
+        
+            <hr aria-hidden="true">
+        
+            <nav id="page-3"
+                 role="navigation"
+                 aria-label="Aller à la section Projets"
+                 tabindex="0">
+                Projets
+            </nav>
+        
+            <hr aria-hidden="true">
+        
+            <nav id="page-4"
+                 role="navigation"
+                 aria-label="Aller à la section Contact"
+                 tabindex="0">
+                Contact
+            </nav>
+        
+            <hr aria-hidden="true">
         </header>
     `;
 }
