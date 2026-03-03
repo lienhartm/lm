@@ -324,32 +324,38 @@ function chart(x) {
             break;
         case 4:
             chart = `
-                <h2>Mentions sur le droit d'auteur</h2>
-                <ol>
-                    <li>Propriété intellectuelle</li>
-                    <p>
-                        Tout le contenu publié sur le site (textes, images, codes, projets, idées, vidéos, schémas, etc, etc.) est protégé par le 
-                        <b>Code de la Propriété Intellectuelle</b>
-                        .
+                <h2 id="droit-title">Mentions sur le droit d'auteur</h2>
+                
+                <ol aria-labelledby="droit-title">
+                
+                    <li id="propriete">Propriété intellectuelle</li>
+                    <p aria-labelledby="propriete">
+                        Tout le contenu publié sur le site (textes, images, codes, projets, idées, vidéos, schémas, etc.) est protégé par le 
+                        <b>Code de la Propriété Intellectuelle</b>.
                         <br>
                         Il appartient exclusivement à 
-                        <b id='cv'>LIENHART MICHAEL</b>
-                        , sauf mention explicite d'une source externe.
+                        <b id="cv">LIENHART MICHAEL</b>, sauf mention explicite d'une source externe.
                     </p>
-                    <li>Licence d'utilisation</li>
-                    <p>
+                
+                    <li id="licence">Licence d'utilisation</li>
+                    <p aria-labelledby="licence">
                         Sauf indication contraire, les contenus peuvent être partagés à des fins 
-                        <b>non commerciales</b>
-                         à condition de citer clairement l'auteur et la source du site.
+                        <b>non commerciales</b> à condition de citer clairement l'auteur et la source du site.
                     </p>
-                    <li>Interdictions</li>
-                    <p>Toutes reproduction, modification, diffusion ou utilisation commerciale du contenu sans autorisation préalable est strictement interdite.</p>
-                    <li>Signalement de violation</li>
-                    <p>
-                        Toutes personne estimant qu'un contenu du site viole ses droits d'auteur peut en faire la demande de retrait via le 
-                        <i id='form'>formulaire de contact</i>
-                        .
+                
+                    <li id="interdictions">Interdictions</li>
+                    <p aria-labelledby="interdictions">
+                        Toute reproduction, modification, diffusion ou utilisation commerciale du contenu sans autorisation préalable est strictement interdite.
                     </p>
+                
+                    <li id="signalement">Signalement de violation</li>
+                    <p aria-labelledby="signalement">
+                        Toute personne estimant qu'un contenu du site viole ses droits d'auteur peut en faire la demande de retrait via le 
+                        <i id="form" role="link" tabindex="0" aria-label="Accéder au formulaire de contact">
+                            formulaire de contact
+                        </i>.
+                    </p>
+                
                 </ol>
             `;
             break;
