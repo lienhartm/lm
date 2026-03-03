@@ -41,25 +41,25 @@ window.onload = function () {
 
 function logo(m) {
     return `
-            <div id="animate" width="${45 * m}" height="${40 * m}">
-                <div class="logo" id="logo" width="${45 * m}" height="${40 * m}">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="${45 * m}" height="${40 * m}" viewBox="0 0 ${45 * m} ${40 * m}" fill="none">
-                        <!-- Fond -->
-                        <rect width="${45 * m}" height="${40 * m}" fill="#f2f2f2" stroke="#484848" stroke-width="10" />
-                        <!-- Lettre L -->
-                        <rect x="${5 * m}"  y="${5 * m}"  width="${5 * m}"  height="${30 * m}" fill="#696969" />
-                        <rect x="${5 * m}"  y="${30 * m}" width="${20 * m}" height="${5 * m}"  fill="#696969" />
-                        <!-- Lettre M -->
-                        <rect x="${15 * m}" y="${5 * m}"  width="${5 * m}"  height="${30 * m}" fill="#989898" />
-                        <rect x="${20 * m}" y="${10 * m}" width="${5 * m}"  height="${5 * m}"  fill="#989898" />
-                        <rect x="${25 * m}" y="${15 * m}" width="${5 * m}"  height="${5 * m}"  fill="#989898" />
-                        <rect x="${30 * m}" y="${10 * m}" width="${5 * m}"  height="${5 * m}"  fill="#989898" />
-                        <rect x="${35 * m}" y="${5 * m}"  width="${5 * m}"  height="${30 * m}" fill="#989898" />
-                        <!-- Ponctuation . -->
-                        <rect x="${15 * m}"  y="${30 * m}" width="${5 * m}" height="${5 * m}" fill="#c8c8c8" />
-                    </svg>
-                </div>
-            </div> 
+        <div id="animate" width="${45 * m}" height="${40 * m}" role="region" aria-label="Animation du logo LM">
+            <div class="logo" id="logo" width="${45 * m}" height="${40 * m}" role="img" aria-label="Logo LM représentant les lettres L et M avec ponctuation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="${45 * m}" height="${40 * m}" viewBox="0 0 ${45 * m} ${40 * m}" fill="none" role="presentation">
+                    <!-- Fond -->
+                    <rect width="${45 * m}" height="${40 * m}" fill="#f2f2f2" stroke="#484848" stroke-width="10" />
+                    <!-- Lettre L -->
+                    <rect x="${5 * m}"  y="${5 * m}"  width="${5 * m}"  height="${30 * m}" fill="#696969" />
+                    <rect x="${5 * m}"  y="${30 * m}" width="${20 * m}" height="${5 * m}"  fill="#696969" />
+                    <!-- Lettre M -->
+                    <rect x="${15 * m}" y="${5 * m}"  width="${5 * m}"  height="${30 * m}" fill="#989898" />
+                    <rect x="${20 * m}" y="${10 * m}" width="${5 * m}"  height="${5 * m}"  fill="#989898" />
+                    <rect x="${25 * m}" y="${15 * m}" width="${5 * m}"  height="${5 * m}"  fill="#989898" />
+                    <rect x="${30 * m}" y="${10 * m}" width="${5 * m}"  height="${5 * m}"  fill="#989898" />
+                    <rect x="${35 * m}" y="${5 * m}"  width="${5 * m}"  height="${30 * m}" fill="#989898" />
+                    <!-- Ponctuation . -->
+                    <rect x="${15 * m}"  y="${30 * m}" width="${5 * m}" height="${5 * m}" fill="#c8c8c8" />
+                </svg>
+            </div>
+        </div>
     `;
 }
 
