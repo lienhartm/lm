@@ -75,9 +75,18 @@
         data-slug="ewzwS4LfCh" data-color="#FFDD00" data-emoji="☕" data-font="Cookie" data-text="Buy me a coffee"
         data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff"></script>
     <!--#-->
+    <!--#-->
+    <!--NOCOPY-->
+    <script>
+        document.addEventListener('contextmenu', e => e.preventDefault());
+        document.addEventListener('copy', e => {
+            e.preventDefault();
+        });
+    </script>
 </head>
 
-<body>
+<body oncopy="return false" oncut="return false" onpaste="return false" oncontextmenu="return false"
+    onselectstart="return false" ondragstart="return false">
     <!--#-->
     <!-- HTML CONTENT PAGE -->
     <!--#-->
