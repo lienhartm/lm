@@ -372,9 +372,9 @@ figure {
     text-align: center;
 }
 
-figcaption {
-    margin-left: 75%;
-    margin-top: 25px;
+.caption {
+  text-align: center;
+  margin: 50px;
 }
 
 .box {
