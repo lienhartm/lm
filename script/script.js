@@ -423,16 +423,20 @@ function page(x) {
                     <b>objectif concret</b> : événementiel, médiation, mémoire, innovation locale ou industrielle. 
                     Le projet de photobooth que je développe actuellement en est un bon exemple : un système autonome, robuste, pensé pour fonctionner dans le monde réel, sans dépendre de solutions opaques ou surdimensionnées.
                 </p>
+                
                 <br>
+
+                <div>
+                    <p aria-labelledby="presentation-title">Sur ce blog, je partage :</p>
                 
-                <p aria-labelledby="presentation-title">Sur ce blog, je partage :</p>
-                
-                <ul aria-labelledby="presentation-title">
-                    <li>des retours d’expérience techniques,</li>
-                    <li>des réflexions sur la conception logicielle et système,</li>
-                    <li>des projets en cours ou aboutis,</li>
-                    <li>et parfois des points de vue plus personnels sur la technologie, son usage et son sens.</li>
-                </ul>
+                    <ul aria-labelledby="presentation-title">
+                        <li>des retours d’expérience techniques,</li>
+                        <li>des réflexions sur la conception logicielle et système,</li>
+                        <li>des projets en cours ou aboutis,</li>
+                        <li>et parfois des points de vue plus personnels sur la technologie, son usage et son sens.</li>
+                    </ul>
+                </div>
+    
                 <br>
                 
                 <p class="border-right" aria-labelledby="presentation-title">
