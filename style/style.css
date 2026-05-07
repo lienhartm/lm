@@ -110,6 +110,11 @@ header>nav {
     text-align: center;
 }
 
+header>hr {
+    border: 2px solid black;
+    height: 26px;
+}
+
 div#content {
     min-height: 600px;
     background-color: #f8f8f8;
