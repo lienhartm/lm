@@ -426,7 +426,7 @@ function page(x) {
                 
                 <br>
 
-                <div>
+                <div class="blog">
                     <p aria-labelledby="presentation-title">Sur ce blog, je partage :</p>
                 
                     <ul aria-labelledby="presentation-title">
