@@ -44,6 +44,10 @@ br {
     margin-bottom: 50px;
 }
 
+br.return {
+    margin-bottom: 0px;
+}
+
 h1 {
     font-size: 3em;
     background-color: #fff;
