@@ -291,9 +291,11 @@ span:before {
     padding-right: 5px;
 }
 
-h2,
-li {
+h2, li {
     font-weight: bold;
+}
+
+li {
     letter-spacing: 1px;
 }
 
