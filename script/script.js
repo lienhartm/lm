@@ -486,6 +486,8 @@ function page(x) {
                     <b>méthodologie Agile</b> et le 
                     <b>framework Scrum</b>.
                 </p>
+
+                <br>
                 
                 <p class="border-right" aria-labelledby="parcours-title">
                     Lors de ma formation en développement web et web mobile à Elan Formation, j’ai suivi un parcours individualisé de trois mois vers les métiers du développement informatique, adapté à mes besoins, qui m’a permis d’acquérir de l’expérience en maquettage, modélisation UML et conception de sites web, tout en me formant et en pratiquant activement le développement web et web mobile.
@@ -524,6 +526,8 @@ function page(x) {
                 <p class="border-right" aria-labelledby="parcours-title">
                     J'ai pu conduire et développer de nombreux projets numériques concrets, tels que des applications de gestion (devis/facturation, questionnaires, audits, tournois sportifs), des outils métiers, ainsi que des sites web fonctionnels, démontrant sa capacité à concevoir, développer et mettre en œuvre des solutions adaptées aux besoins réels.
                 </p>
+
+                <br>
                 
                 <p class="border-left" aria-labelledby="parcours-title">
                     Mon profil se distingue par une forte polyvalence, une approche structurée, une capacité d’adaptation, et une volonté d’évoluer dans les métiers de l’informatique et du numérique.
