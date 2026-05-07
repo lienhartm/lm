@@ -334,6 +334,10 @@ tr:hover {
     background: #f0f4ff;
 }
 
+section.contact {
+    line-height: 0px;
+}
+
 .field {
     margin: 10px;
 }
@@ -433,10 +437,6 @@ figcaption {
         width: 90%;
         max-width: 450px;
         margin: 0 auto;
-    }
-
-    section.contact {
-        line-height: 0px;
     }
 
     input[type="text"] {
