@@ -41,7 +41,7 @@ body {
 }
 
 br {
-    margin-bottom: 5px;
+    margin-bottom: 50px;
 }
 
 h1 {
@@ -361,10 +361,6 @@ figcaption {
 
 .message {
     margin: 70px;
-}
-
-.space {
-    height: 100px;
 }
 
 .left {
