@@ -656,7 +656,7 @@ function page(x) {
                                 <br class="return">
                                 <div class="field">
                                     <label for="message">Message:</label>
-                                    <br /><br />
+                                    <br class="return"><br class="return">
                                     <textarea name="message" id="message" rows="10" cols="100" aria-required="true"></textarea>
                                 </div>
                                 <br class="return">
@@ -668,7 +668,7 @@ function page(x) {
                             <div class="submit">
                                 <input type="submit" id="button" value="Envoyer le courriel" aria-label="Envoyer le formulaire de contact">
                             </div>
-                            <br>
+                            <br class="return">
                             <p id="form-instructions" class="sr-only">
                                 Tous les champs sont obligatoires. Merci de remplir correctement le formulaire avant soumission.
                             </p>
@@ -695,11 +695,11 @@ function page(x) {
                     
                         <p class="message" aria-labelledby="support-title">
                             Ce site est développé de manière indépendante.
-                            <br /><br />
+                            <br class="return"><br class="return">
                             Si mon travail vous est utile, vous pouvez me soutenir en m’offrant un café ☕
-                            <br /><br />
+                            <br class="return"><br class="return">
                             Votre contribution m’aide à continuer à créer et à améliorer mes projets.
-                            <br /><br /><br />
+                            <br>
                             Merci pour votre confiance et votre soutien !
                         </p>
                     </div>
