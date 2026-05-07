@@ -670,7 +670,7 @@ function page(x) {
                                 Tous les champs sont obligatoires. Merci de remplir correctement le formulaire avant soumission.
                             </p>
                             <div class="submit">
-                                <input type="submit" id="button" value="Envoyer le courriel" aria-label="Envoyer le formulaire de contact">
+                                <input class="cv-button" type="submit" id="button" value="Envoyer le courriel" aria-label="Envoyer le formulaire de contact">
                             </div>
                         </form>
                     </div>
