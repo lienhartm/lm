@@ -695,9 +695,9 @@ function page(x) {
                     
                         <p class="message" aria-labelledby="support-title">
                             Ce site est développé de manière indépendante.
-                            <br class="return"><br class="return">
+                            <br class="return">
                             Si mon travail vous est utile, vous pouvez me soutenir en m’offrant un café ☕
-                            <br class="return"><br class="return">
+                            <br class="return">
                             Votre contribution m’aide à continuer à créer et à améliorer mes projets.
                             <br>
                             Merci pour votre confiance et votre soutien !
