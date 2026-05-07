@@ -571,6 +571,23 @@ function page(x) {
                 <h2 id="contact-title">Contact</h2>
                 
                 <section class="contact" role="region" aria-labelledby="contact-title">
+
+                    <div>
+                      <h2>Mon Curriculum Vitae</h2>
+                    
+                      <p>
+                        Electrotechnicien, avec compétences
+                        en développement web, gestion de projet, système, réseaux et maintenance informatique.
+                      </p>
+                    
+                      <a href="cv-michael-lienhart.pdf" target="_blank" download class="cv-button">
+                        Télécharger mon CV (PDF)
+                      </a>
+                    </div>
+
+                    <div class="space"></div>
+                    <hr>
+                    <div class="space"></div>
                 
                     <h2 id="contact-subtitle">Contactez-moi !</h2>
                 
