@@ -580,15 +580,15 @@ function page(x) {
                         en développement web, gestion de projet, système, réseaux et maintenance informatique.
                       </p>
 
-                      <a href="../image/cv-michael-lienhart.pdf"
-                        target="_blank"
-                        class="cv-button">
-                        Voir le CV
-                      </a>
-                    
-                      <a href="../image/cv-michael-lienhart.pdf" target="_blank" download class="cv-button">
-                        Télécharger mon CV (PDF)
-                      </a>
+                      <div class="cv-action">
+                          <a href="../image/cv-michael-lienhart.pdf" target="_blank" class="cv-button">
+                            Voir le CV
+                          </a>
+                        
+                          <a href="../image/cv-michael-lienhart.pdf" target="_blank" download class="cv-button">
+                            Télécharger mon CV (PDF)
+                          </a>
+                      </div>
                     </div>
 
                     <div class="space"></div>
