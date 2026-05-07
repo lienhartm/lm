@@ -377,6 +377,7 @@ figcaption {
 
 .message {
     margin: 70px;
+    line-height: 24px;
 }
 
 .left {
