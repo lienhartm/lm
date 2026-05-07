@@ -181,6 +181,14 @@ footer {
     margin: 50px 0;
 }
 
+.blog>p {
+    margin-bottom: 40px;
+}
+
+.blog>ul {
+    margin-left: 120px;
+}
+
 /* animation */
 @keyframes pivot-then-flip {
 
