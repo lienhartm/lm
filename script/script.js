@@ -386,7 +386,7 @@ function page(x) {
     switch (x) {
         case 1:
             page = `
-                <h2 id="presentation-title"><u>Présentation</u></h2>
+                <h1 id="presentation-title"><u>Présentation</u></h1>
                 
                 <p class="border-left" aria-labelledby="presentation-title">
                     Je m’appelle 
@@ -448,7 +448,7 @@ function page(x) {
             break;
         case 2:
             page = `
-                <h2 id="parcours-title">Parcours</h2>
+                <h1 id="parcours-title">Parcours</h1>
                 
                 <p class="border-left" aria-labelledby="parcours-title">
                     M'étant formé dans le domaine du numérique et de l’informatique, avec un parcours orienté vers le développement logiciel, les systèmes, les réseaux et la cybersécurité.
@@ -520,7 +520,7 @@ function page(x) {
             break;
         case 3:
             page = `
-                <h2 id="projets-title"><u>Projets</u></h2>
+                <h1 id="projets-title"><u>Projets</u></h1>
                 
                 <div class="text" aria-hidden="true"></div>
                 
@@ -568,7 +568,7 @@ function page(x) {
             break;
         case 4:
             page = `
-                <h2 id="contact-title">Contact</h2>
+                <h1 id="contact-title">Contact</h1>
                 
                 <section class="contact" role="region" aria-labelledby="contact-title">
 
