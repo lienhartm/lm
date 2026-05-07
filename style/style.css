@@ -177,6 +177,15 @@ footer {
     background: #000;
 }
 
+.blog {
+    margin: 50px 0;
+}
+
+.blog>li {
+    letter-spacing: 1px;
+    line-height: 10px;
+}
+
 /* animation */
 @keyframes pivot-then-flip {
 
