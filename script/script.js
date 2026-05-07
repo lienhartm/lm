@@ -684,24 +684,28 @@ function page(x) {
 
                         <br class="return">
 
-                        <figure class="box" role="group" aria-labelledby="support-title">
-                            <img src="https://lienhartm.github.io/lm/image/buymeacoffee.png" alt="Logo Buy Me A Coffee" width="400" aria-hidden="false">
-                            <figcaption>
-                                <a href="https://www.buymeacoffee.com/ewzwS4LfCh" target="_blank" aria-label="Soutenir l'auteur via Buy Me A Coffee">
-                                    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important; width: 200px !important;">
-                                </a>
-                            </figcaption>
-                        </figure>
-                    
-                        <p class="message" aria-labelledby="support-title">
-                            Ce site est développé de manière indépendante.
-                            <br class="return">
-                            Si mon travail vous est utile, vous pouvez me soutenir en m’offrant un café ☕
-                            <br class="return">
-                            Votre contribution m’aide à continuer à créer et à améliorer mes projets.
-                            <br>
-                            Merci pour votre confiance et votre soutien !
-                        </p>
+                        <div class="support">
+                            <figure class="box" role="group" aria-labelledby="support-title">
+                                <img src="https://lienhartm.github.io/lm/image/buymeacoffee.png" alt="Logo Buy Me A Coffee" width="400" aria-hidden="false">
+                            </figure>
+        
+                            <p class="message" aria-labelledby="support-title">
+                                Ce site est développé de manière indépendante.
+                                <br class="return">
+                                Si mon travail vous est utile, vous pouvez me soutenir en m’offrant un café ☕
+                                <br class="return">
+                                Votre contribution m’aide à continuer à créer et à améliorer mes projets.
+                                <br>
+                                Merci pour votre confiance et votre soutien !
+                            </p>
+                        </div>
+                        
+                        <div class="caption">
+                            <a href="https://www.buymeacoffee.com/ewzwS4LfCh" target="_blank" aria-label="Soutenir l'auteur via Buy Me A Coffee">
+                                <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important; width: 200px !important;">
+                            </a>
+                        </div>
+                        
                     </div>
                 
                 </section>
