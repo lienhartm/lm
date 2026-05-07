@@ -455,7 +455,7 @@ function page(x) {
             break;
         case 2:
             page = `
-                <h1 id="parcours-title">Parcours</h1>
+                <h1 id="parcours-title"><u>Parcours</u></h1>
 
                 <br>
                 
@@ -598,7 +598,7 @@ function page(x) {
             break;
         case 4:
             page = `
-                <h1 id="contact-title">Contact</h1>
+                <h1 id="contact-title"><u>Contact</u></h1>
 
                 <br>
                 
