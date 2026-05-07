@@ -363,6 +363,11 @@ input[type="submit"] {
     padding-left: 10px;
 }
 
+.support {
+  display: flex;
+  justify-content: space-around;
+}
+
 figure {
     text-align: center;
 }
