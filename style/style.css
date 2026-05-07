@@ -108,6 +108,7 @@ header {
 header>nav {
     padding-inline: 50px;
     text-align: center;
+    font-size: 20px;
 }
 
 header>hr {
@@ -121,6 +122,7 @@ div#content {
     color: #000;
     padding: 50px;
     width: 75%;
+    line-height: 42px;
 }
 
 footer {
