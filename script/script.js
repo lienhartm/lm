@@ -387,6 +387,8 @@ function page(x) {
         case 1:
             page = `
                 <h1 id="presentation-title"><u>Présentation</u></h1>
+
+                <br>
                 
                 <p class="border-left" aria-labelledby="presentation-title">
                     Je m’appelle 
@@ -445,6 +447,7 @@ function page(x) {
                     <b>transmettre</b> et 
                     <b>échanger</b>. Si certains contenus peuvent être utiles, inspirants ou simplement clairs pour d’autres, alors l’objectif est atteint.
                 </p>
+                
                 <br />
                 
                 <p aria-labelledby="presentation-title">Bonne lecture.</p>
@@ -453,6 +456,8 @@ function page(x) {
         case 2:
             page = `
                 <h1 id="parcours-title">Parcours</h1>
+
+                <br>
                 
                 <p class="border-left" aria-labelledby="parcours-title">
                     M'étant formé dans le domaine du numérique et de l’informatique, avec un parcours orienté vers le développement logiciel, les systèmes, les réseaux et la cybersécurité.
@@ -527,6 +532,8 @@ function page(x) {
         case 3:
             page = `
                 <h1 id="projets-title"><u>Projets</u></h1>
+
+                <br>
                 
                 <div class="text" aria-hidden="true"></div>
 
@@ -545,9 +552,13 @@ function page(x) {
                         <li>Gestion locative - InsoliteSPA68 - HTML, CSS, JS, PHP</li>
                     </ul>
                 </div>
+
+                <br>
                 
                 <img src="image/company.png" alt="Icône entreprise" width="80" aria-hidden="false">
 
+                <br>
+                
                 <div class="blog">
                     <p aria-labelledby="projets-title">
                         Puis des projets personnels comme :
@@ -562,8 +573,12 @@ function page(x) {
                         <li>Mini diapo auto de présentation : Epicur Persolo - HTML, CSS, JS</li>
                     </ul>
                 </div>
+
+                <br>
                 
                 <img src="image/electronics.png" alt="Icône électronique" width="80" aria-hidden="false">
+
+                <br>
 
                 <div class="blog">
                     <p aria-labelledby="projets-title">
@@ -580,10 +595,14 @@ function page(x) {
         case 4:
             page = `
                 <h1 id="contact-title">Contact</h1>
+
+                <br>
                 
                 <section class="contact" role="region" aria-labelledby="contact-title">
 
                     <h2 id="contact-subtitle">Mon Curriculum Vitae</h2>
+
+                    <br>
                       
                     <div>
                       <p aria-labelledby="contact-subtitle">
@@ -602,17 +621,20 @@ function page(x) {
                       </div>
                     </div>
 
-                    <div class="space"></div>
+                    <br>
                     <hr>
-                    <div class="space"></div>
+                    <br>
                 
                     <h2 id="contact-subtitle">Contactez-moi !</h2>
+
+                    <br>
                 
                     <div>
                         <p aria-labelledby="contact-subtitle">
                             N'hésitez pas et prenez contact avec moi pour entreprendre un projet ou pour vous aider dans votre réalisation.
                         </p>
                     </div>
+
                     <br />
                 
                     <div>
@@ -642,19 +664,21 @@ function page(x) {
                             <div class="submit">
                                 <input type="submit" id="button" value="Envoyer le courriel" aria-label="Envoyer le formulaire de contact">
                             </div>
-                            <br /><br />
+                            <br />
                             <p id="form-instructions" class="sr-only">
                                 Tous les champs sont obligatoires. Merci de remplir correctement le formulaire avant soumission.
                             </p>
                         </form>
                     </div>
                 
-                    <div class="space"></div>
+                    <br>
                     <hr>
-                    <div class="space"></div>
+                    <br>
                 
                     <div>
                         <h2 id="support-title">Supportez-moi !</h2>
+
+                        <br>
                     
                         <figure class="box" role="group" aria-labelledby="support-title">
                             <img src="https://lienhartm.github.io/lm/image/buymeacoffee.png" alt="Logo Buy Me A Coffee" width="400" aria-hidden="false">
