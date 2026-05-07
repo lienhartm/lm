@@ -485,19 +485,21 @@ function page(x) {
                 <p class="border-right" aria-labelledby="parcours-title">
                     Lors de ma formation en développement web et web mobile à Elan Formation, j’ai suivi un parcours individualisé de trois mois vers les métiers du développement informatique, adapté à mes besoins, qui m’a permis d’acquérir de l’expérience en maquettage, modélisation UML et conception de sites web, tout en me formant et en pratiquant activement le développement web et web mobile.
                 </p>
-                
-                <p aria-labelledby="parcours-title">
-                    Je dispose de compétences techniques étendues, couvrant :
-                </p>
-                
-                <ul aria-labelledby="parcours-title">
-                    <li>les langages de programmation : HTML, CSS, JavaScript, PHP, SQL, Java (notions),</li>
-                    <li>les frameworks et outils : React, Next.js, Svelte, WordPress, Symfony, Spring,</li>
-                    <li>les environnements et outils professionnels : Linux, Git, Docker,</li>
-                    <li>la gestion de projet et le travail collaboratif : Jira, Confluence, Slack, Jitsi,</li>
-                    <li>ainsi que plusieurs certifications (Pix, bases Java, bases de données, architecture du web, développement côté client).</li>
-                </ul>
 
+                <div class="blog">
+                    <p aria-labelledby="parcours-title">
+                        Je dispose de compétences techniques étendues, couvrant :
+                    </p>
+                
+                    <ul aria-labelledby="parcours-title">
+                        <li>les langages de programmation : HTML, CSS, JavaScript, PHP, SQL, Java (notions),</li>
+                        <li>les frameworks et outils : React, Next.js, Svelte, WordPress, Symfony, Spring,</li>
+                        <li>les environnements et outils professionnels : Linux, Git, Docker,</li>
+                        <li>la gestion de projet et le travail collaboratif : Jira, Confluence, Slack, Jitsi,</li>
+                        <li>ainsi que plusieurs certifications (Pix, bases Java, bases de données, architecture du web, développement côté client).</li>
+                    </ul>
+                </div>
+                
                 <br>
 
                 <img class="left" src="image/competence.png" alt="Icône compétence" width="80" aria-hidden="false">
@@ -527,47 +529,52 @@ function page(x) {
                 <h1 id="projets-title"><u>Projets</u></h1>
                 
                 <div class="text" aria-hidden="true"></div>
+
+                <div class="blog">
+                    <p aria-labelledby="projets-title">
+                        D'autres petits travaux ont été rendus pour des associations ou entreprises comme :
+                    </p>
                 
-                <p aria-labelledby="projets-title">
-                    D'autres petits travaux ont été rendus pour des associations ou entreprises comme :
-                </p>
-                
-                <ul aria-labelledby="projets-title">
-                    <li>Questionnaire - Association Caritas - Docker, HTML, CSS, JS, PHP, SQL</li>
-                    <li>CRM - Design Concept - Docker, HTML, CSS, JS, REACT, Svelte, C++, SQL</li>
-                    <li>Suivi Evenement Sportif - Hopla Cup - WordPress, HTML, CSS, JS, PHP, SQL</li>
-                    <li>Gestion locative - Cavalons - HTML, CSS, JS, Go, PostgreSQL</li>
-                    <li>Gestion administrative - Génération Mouvement 68 - HTML, CSS, JS</li>
-                    <li>Gamification - EasyBetMe - Docker, HTML, CSS, JS, PHP, SQL</li>
-                    <li>Gestion locative - InsoliteSPA68 - HTML, CSS, JS, PHP</li>
-                </ul>
+                    <ul aria-labelledby="projets-title">
+                        <li>Questionnaire - Association Caritas - Docker, HTML, CSS, JS, PHP, SQL</li>
+                        <li>CRM - Design Concept - Docker, HTML, CSS, JS, REACT, Svelte, C++, SQL</li>
+                        <li>Suivi Evenement Sportif - Hopla Cup - WordPress, HTML, CSS, JS, PHP, SQL</li>
+                        <li>Gestion locative - Cavalons - HTML, CSS, JS, Go, PostgreSQL</li>
+                        <li>Gestion administrative - Génération Mouvement 68 - HTML, CSS, JS</li>
+                        <li>Gamification - EasyBetMe - Docker, HTML, CSS, JS, PHP, SQL</li>
+                        <li>Gestion locative - InsoliteSPA68 - HTML, CSS, JS, PHP</li>
+                    </ul>
+                </div>
                 
                 <img src="image/company.png" alt="Icône entreprise" width="80" aria-hidden="false">
-                
-                <p aria-labelledby="projets-title">
-                    Puis des projets personnels comme :
-                </p>
-                
-                <ul aria-labelledby="projets-title">
-                    <li>Website : Délices de nos rivières - HTML, CSS, JS</li>
-                    <li>Website : BasketBall - HTML, CSS, JS, REACT, PHP, SQL</li>
-                    <li>Jeu : MasterMind - Java Spring Boot, H2O</li>
-                    <li>Cloud : BlocNote - HTML, CSS, JS, REACT, MongoDB</li>
-                    <li>Jeu : Survivor - HTML, CSS, JS</li>
-                    <li>Mini diapo auto de présentation : Epicur Persolo - HTML, CSS, JS</li>
-                </ul>
+
+                <div class="blog">
+                    <p aria-labelledby="projets-title">
+                        Puis des projets personnels comme :
+                    </p>
+                    
+                    <ul aria-labelledby="projets-title">
+                        <li>Website : Délices de nos rivières - HTML, CSS, JS</li>
+                        <li>Website : BasketBall - HTML, CSS, JS, REACT, PHP, SQL</li>
+                        <li>Jeu : MasterMind - Java Spring Boot, H2O</li>
+                        <li>Cloud : BlocNote - HTML, CSS, JS, REACT, MongoDB</li>
+                        <li>Jeu : Survivor - HTML, CSS, JS</li>
+                        <li>Mini diapo auto de présentation : Epicur Persolo - HTML, CSS, JS</li>
+                    </ul>
+                </div>
                 
                 <img src="image/electronics.png" alt="Icône électronique" width="80" aria-hidden="false">
-                
-                <p aria-labelledby="projets-title">
-                    Et des projets FabLab' au Technistub :
-                </p>
-                
-                <ul aria-labelledby="projets-title">
-                    <li>Régie Makerfight</li>
-                    <li>PhotoBooth</li>
-                    <li>Makerfight</li>
-                </ul>
+
+                <div class="blog">
+                    <p aria-labelledby="projets-title">
+                        Et des projets FabLab' au Technistub :
+                    </p>
+                    
+                    <ul aria-labelledby="projets-title">
+                        <li>PhotoBooth</li>
+                        <li>Makerfight</li>
+                    </ul>
+                </div>
             `;
             break;
         case 4:
