@@ -40,6 +40,10 @@ body {
     border-radius: 8px;
 }
 
+br {
+    margin-bottom: 5px;
+}
+
 h1 {
     font-size: 3em;
     background-color: #fff;
