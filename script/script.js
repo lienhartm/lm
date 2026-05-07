@@ -648,18 +648,18 @@ function page(x) {
                                     <label for="from_name">Votre nom:</label>
                                     <input type="text" name="user_name" id="from_name" aria-required="true">
                                 </div>
-                                <br />
+                                <br class="return">
                                 <div class="field">
                                     <label for="user_objet">Objet:</label>
                                     <input type="text" name="objet" id="user_objet" aria-required="true">
                                 </div>
-                                <br />
+                                <br class="return">
                                 <div class="field">
                                     <label for="message">Message:</label>
                                     <br /><br />
                                     <textarea name="message" id="message" rows="10" cols="100" aria-required="true"></textarea>
                                 </div>
-                                <br />
+                                <br class="return">
                                 <div class="field">
                                     <label for="user_email">Votre email:</label>
                                     <input type="text" name="user_email" id="user_email" aria-required="true">
@@ -668,7 +668,7 @@ function page(x) {
                             <div class="submit">
                                 <input type="submit" id="button" value="Envoyer le courriel" aria-label="Envoyer le formulaire de contact">
                             </div>
-                            <br />
+                            <br>
                             <p id="form-instructions" class="sr-only">
                                 Tous les champs sont obligatoires. Merci de remplir correctement le formulaire avant soumission.
                             </p>
