@@ -661,13 +661,13 @@ function page(x) {
                                     <input type="text" name="user_email" id="user_email" aria-required="true">
                                 </div>
                             </div>
-                            <div class="submit">
-                                <input type="submit" id="button" value="Envoyer le courriel" aria-label="Envoyer le formulaire de contact">
-                            </div>
                             <br class="return">
                             <p id="form-instructions" class="sr-only">
                                 Tous les champs sont obligatoires. Merci de remplir correctement le formulaire avant soumission.
                             </p>
+                            <div class="submit">
+                                <input type="submit" id="button" value="Envoyer le courriel" aria-label="Envoyer le formulaire de contact">
+                            </div>
                         </form>
                     </div>
                 
