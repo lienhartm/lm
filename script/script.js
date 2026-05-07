@@ -605,6 +605,8 @@ function page(x) {
                 <section class="contact" role="region" aria-labelledby="contact-title">
 
                     <h2 id="contact-subtitle">Mon Curriculum Vitae</h2>
+
+                    <br class="return">
                       
                     <div>
                       <p aria-labelledby="contact-subtitle">
@@ -629,6 +631,8 @@ function page(x) {
                 
                     <h2 id="contact-subtitle">Contactez-moi !</h2>
 
+                    <br class="return">
+                                
                     <div>
                         <p aria-labelledby="contact-subtitle">
                             N'hésitez pas et prenez contact avec moi pour entreprendre un projet ou pour vous aider dans votre réalisation.
@@ -677,7 +681,9 @@ function page(x) {
                 
                     <div>
                         <h2 id="support-title">Supportez-moi !</h2>
-                    
+
+                        <br class="return">
+
                         <figure class="box" role="group" aria-labelledby="support-title">
                             <img src="https://lienhartm.github.io/lm/image/buymeacoffee.png" alt="Logo Buy Me A Coffee" width="400" aria-hidden="false">
                             <figcaption>
