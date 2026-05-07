@@ -435,6 +435,10 @@ figcaption {
         margin: 0 auto;
     }
 
+    section.contact {
+        line-height: 0px;
+    }
+
     input[type="text"] {
         margin-left: 0;
         width: 130px
