@@ -79,10 +79,11 @@ p {
 }
 
 .message {
-    margin-top: 20px;
     font-size: 1.1em;
     background-color: #fff;
     color: #404040;
+    margin: 45px 60px;
+    line-height: 24px;
 }
 
 .logo {
@@ -373,11 +374,6 @@ figcaption {
 
 .box {
     float: left;
-}
-
-.message {
-    margin: 45px 60px;
-    line-height: 24px;
 }
 
 .left {
