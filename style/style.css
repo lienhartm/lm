@@ -412,8 +412,24 @@ figure {
         height: 180px;
     }
 
+    .cv-action, .support {
+        flex-direction: column;
+    }
+
+    .caption {
+        margin: auto;
+    }
+
     .logo {
         padding: 0;
+    }
+
+    .contact>div>p, form {
+        line-height: normal;
+    }
+
+    .blog>ul {
+        margin-left: -20px;
     }
 
     svg {
@@ -424,7 +440,7 @@ figure {
     }
 
     header {
-        height: 200px;
+        height: 220px;
         flex-direction: column;
     }
 
