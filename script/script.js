@@ -482,7 +482,7 @@ function page(x) {
                 <p class="border-left" aria-labelledby="parcours-title">
                     Mon parcours académique s’inscrit dans une progression cohérente au sein des métiers de l’informatique, avec une spécialisation en 
                     <b>conception, développement et tests de logiciels</b>. J'ai suivi sa formation à l’
-                    <b>UHA 4.0 – Université de Haute-Alsace (Mulhouse)</b>, où j'ai acquis des bases solides en programmation, développement web, architecture du web et technologies modernes, dans un cadre pédagogique s’appuyant sur la 
+                    <b>UHA 4.0 – Université de Haute-Alsace (Mulhouse)</b>, où j'ai acquis des bases solides en programmation, développement web, architecture du web et technologies modernes, dans un cadre pédagogique de gestion de projet s’appuyant sur la 
                     <b>méthodologie Agile</b> et le 
                     <b>framework Scrum</b>.
                 </p>
@@ -498,13 +498,27 @@ function page(x) {
                         Je dispose de compétences techniques étendues, couvrant :
                     </p>
                 
-                    <ul aria-labelledby="parcours-title">
-                        <li>les langages de programmation : HTML, CSS, JavaScript, PHP, SQL, Java (notions),</li>
-                        <li>les frameworks et outils : React, Next.js, Svelte, WordPress, Symfony, Spring,</li>
-                        <li>les environnements et outils professionnels : Linux, Git, Docker,</li>
-                        <li>la gestion de projet et le travail collaboratif : Jira, Confluence, Slack, Jitsi,</li>
-                        <li>ainsi que plusieurs certifications (Pix, bases Java, bases de données, architecture du web, développement côté client).</li>
-                    </ul>
+                        <ul aria-labelledby="parcours-title">
+                            <li>les langages de programmation : HTML, CSS, JavaScript, PHP, SQL, Java (notions), Python, C/C++,</li>
+
+                            <li>les frameworks et outils : React, Next.js, Svelte, WordPress, Symfony, Spring, Node.js, Express.js, Bootstrap, Tailwind CSS,</li>
+
+                            <li>les bases de données et technologies web : MySQL, MariaDB, SQLite, PostgreSQL, REST API, JSON, AJAX,</li>
+
+                            <li>les environnements et outils professionnels : Linux, Git, GitHub, Docker, Visual Studio Code, Postman, Swagger</li>
+
+                            <li>la gestion de projet et le travail collaboratif : Jira, Confluence, Slack, Jitsi, Trello, Mattermost, Teams,</li>
+
+                            <li>les domaines techniques : développement web front-end et back-end, responsive design, accessibilité web, référencement SEO, administration système Linux, virtualisation et conteneurisation,</li>
+
+                            <li>la cybersécurité et les réseaux : bases en sécurité web, analyse réseau, protocoles TCP/IP, découverte des environnements réseau et systèmes,</li>
+
+                            <li>les outils multimédias et créatifs : OBS Studio, Inkscape, GIMP, Audacity, Photopea, Arduino IDE</li>
+
+                            <li>les plateformes d’apprentissage et de pratique : FreeCodeCamp, Codecademy, Root-Me, TryHackMe, Hack The Box, Roadmap.sh, Cisco NetAcad, Microsoft Learn,</li>
+
+                            <li>ainsi que plusieurs certifications et validations de compétences (Pix, bases Java, bases de données, architecture du web, développement côté client, HTML/CSS, JavaScript, cybersécurité et réseaux).</li>
+                        </ul>
                 </div>
                 
                 <br>
@@ -547,6 +561,7 @@ function page(x) {
                     </p>
                 
                     <ul aria-labelledby="projets-title">
+                        <li>Site web - Ski Club de Guebwiller - Docker, HTML, CSS, JS, PHP, SQL</li>
                         <li>Questionnaire - Association Caritas - Docker, HTML, CSS, JS, PHP, SQL</li>
                         <li>CRM - Design Concept - Docker, HTML, CSS, JS, REACT, Svelte, C++, SQL</li>
                         <li>Suivi Evenement Sportif - Hopla Cup - WordPress, HTML, CSS, JS, PHP, SQL</li>
@@ -569,7 +584,7 @@ function page(x) {
                     </p>
                     
                     <ul aria-labelledby="projets-title">
-                        <li>Website : Délices de nos rivières - HTML, CSS, JS</li>
+                        <li>Website : Le pêcheur de mélodies - HTML, CSS, JS</li>
                         <li>Website : BasketBall - HTML, CSS, JS, REACT, PHP, SQL</li>
                         <li>Jeu : MasterMind - Java Spring Boot, H2O</li>
                         <li>Cloud : BlocNote - HTML, CSS, JS, REACT, MongoDB</li>
