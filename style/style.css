@@ -20,6 +20,7 @@ nav[id^="chart-"]:hover {
 }
 
 body {
+    user-select: none;
     font-family: 'Inter', Arial, sans-serif;
     display: flex;
     flex-direction: column;
