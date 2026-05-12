@@ -63,6 +63,27 @@ function logo(m) {
     `;
 }
 
+// restart wave effect
+function restartWaveAnimation() {
+
+    const elements = document.querySelectorAll("header > nav, header > hr");
+
+    elements.forEach(el => {
+
+        const computedStyle = getComputedStyle(el);
+
+        const animation = computedStyle.animation;
+
+        el.style.animation = "none";
+
+        void el.offsetWidth;
+
+        el.style.animation = animation;
+    });
+}
+
+setInterval(restartWaveAnimation, 60000);
+
 // Affiche header # Navigation
 function header() {
     return `

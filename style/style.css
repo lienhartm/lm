@@ -135,7 +135,7 @@ header > nav:nth-of-type(4){ animation-delay:.6s; }
 header > nav:hover{
     color:#000;
     transform:translateY(-8px) scale(1.08);
-    text-shadow: 0 0 1px #000, 1px 1px 1px #8080ff, 2px 2px 2px #ff8080, 3px 3px 3px #80ff80;
+    text-shadow: 0 0 1px #C0C0C0, 1px 1px 1px #8080ff, 2px 2px 2px #ff8080, 3px 3px 3px #80ff80;
     letter-spacing: 4px;
 }
 
