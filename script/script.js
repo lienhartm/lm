@@ -1,18 +1,5 @@
 'use strict'
 
-const googleTagManager = `
-<!-- Google Tag Manager (noscript) -->
-<noscript>
-    <iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-NF539PK4"
-        height="0"
-        width="0"
-        style="display:none;visibility:hidden">
-    </iframe>
-</noscript>
-<!-- End Google Tag Manager (noscript) -->
-`;
-
 window.onload = function () {
     document.body.innerHTML = `
         <div id="scene" role="region" aria-label="Scène principale contenant la carte avec le logo">
@@ -25,7 +12,6 @@ window.onload = function () {
         const body = document.querySelector('body');
         body.style.background = "#F8F8F8";
         body.innerHTML = `
-            ${googleTagManager}
             <a href="javascript:location.reload();" aria-label="Website logo">
                 ${logo(4)}
             </a>
