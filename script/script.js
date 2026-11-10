@@ -387,12 +387,12 @@ function chart(x) {
                 
                     <div class="icon" aria-hidden="true">&#128679;</div> <!-- Icône décorative -->
                 
-                    <h2 id="construction-title">Page en construction</h2>
+                    <h2 id="construction-title">Le choix de la sérénité numérique</h2>
                 
-                    <p>Nous travaillons dur pour rendre cette page disponible bientôt.</p>
+                    <p>Parce que nous méritons tous une informatique qui fonctionne et le savoir pour rester autonome.</p>
                 
                     <div class="message" id="construction-message">
-                        Merci de votre patience !
+                        Merci de votre confiance !
                     </div>
                 
                 </div>
