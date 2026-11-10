@@ -12,7 +12,9 @@ window.onload = function () {
         const body = document.querySelector('body');
         body.style.background = "#F8F8F8";
         body.innerHTML = `
-            ${header()}
+            <a href="javascript:location.reload();" aria-label="Website logo">
+                ${logo(4)}
+            </a>
             <main role="main" aria-label="Contenu principal du site">
                 ${main()}
             </main>
@@ -133,6 +135,7 @@ function header() {
 function chart(x) {
     var chart = '';
     var main = document.getElementById('content');
+
     switch (x) {
         case 0:
             chart = `
@@ -141,33 +144,36 @@ function chart(x) {
                 <ul aria-labelledby="mentions-title">
                 
                     <li id="editeur">Editeur du site</li>
-                    <p aria-labelledby="editeur">
-                        Nom : 
+                    <address aria-labelledby="editeur">
+                        <p>Nom : 
                         <b>Auto-entrepreneur</b>
-                        <br>
-                        Pays d'activité : 
+                        </p>
+                        <p>Pays d'activité : 
                         <b>France</b>
-                        <br>
-                        Site web : 
+                        </p>
+                        <p>Site web : 
                         <i id="site" aria-label="Adresse du site web">
                             https://lienhartm.github.io/lm/
                         </i>
-                        <br>
-                        Adresse e-mail de contact : via le 
+                        </p>
+                        <p>Adresse e-mail de contact : via le 
                         <i id="form" role="link" tabindex="0" aria-label="Accéder au formulaire de contact">
                             formulaire de contact
                         </i>
-                    </p>
+                        </p>
+                    </address>
                 
                     <li id="hebergement">Hébergement du site</li>
-                    <p aria-labelledby="hebergement">
-                        Hébergement : Auto-hébergé par 
+                    <address aria-labelledby="hebergement">
+                        <p>Hébergement : Auto-hébergé par 
                         <b id="cv" aria-label="Nom de l'hébergeur">
                             LIENHART MICHAEL
-                        </b><br>
-                        Localisation du server : 
+                        </b>
+                        </p>
+                        <p>Localisation du server : 
                         <b>France</b>
-                    </p>
+                        </p>
+                    </address>
                 
                     <li id="responsabilite">Responsabilité</li>
                     <p aria-labelledby="responsabilite">
@@ -302,38 +308,29 @@ function chart(x) {
                         <b>LIENHART MICHAËL</b>
                         et toute personne ou organisation souhaitant coopérer sur des projets numériques (sites web, robotique, IA, etc.).
                     </p>
-                    <br>
                 
                     <li id="engagement-lienhart">
                         Engagements de 
                         <b id="cv">LIENHART MICHAEL</b>
                     </li>
-                    <p aria-labelledby="engagement-lienhart">
-                        <span></span>Fournir un travail rigoureux, transparent et conforme aux objectifs du projet.
-                        <br>
-                        <span></span>Respecter la confidentialité des informations partagées.
-                        <br>
-                        <span></span>Favoriser l'esprit de collaboration, la transmission de connaissances et l'innovation.
-                    </p>
-                    <br>
+                    <div aria-labelledby="engagement-lienhart">
+                        <p><span></span>Fournir un travail rigoureux, transparent et conforme aux objectifs du projet.</p>
+                        <p><span></span>Respecter la confidentialité des informations partagées.</p>
+                        <p><span></span>Favoriser l'esprit de collaboration, la transmission de connaissances et l'innovation.</p>
+                    </div>
                 
                     <li id="engagement-partenaire">Engagements du partenaire</li>
-                    <p aria-labelledby="engagement-partenaire">
-                        <span></span>Fournir des informations claires et exactes sur le projet.
-                        <br>
-                        <span></span>Respecter les délais et la communication convenue.
-                        <br>
-                        <span></span>Reconnaître la contribution de <b id="cv">LIENHART MICHAEL</b> dans toute publication ou présentation liée au projet.
-                    </p>
-                    <br>
+                    <div aria-labelledby="engagement-partenaire">
+                        <p><span></span>Fournir des informations claires et exactes sur le projet.</p>
+                        <p><span></span>Respecter les délais et la communication convenue.</p>
+                        <p><span></span>Reconnaître la contribution de <b id="cv">LIENHART MICHAEL</b> dans toute publication ou présentation liée au projet.</p>
+                    </div>
                 
                     <li id="confidentialite">Confidentialité et propriété</li>
                     <p aria-labelledby="confidentialite">
                         Les codes, prototypes, ou documents produits restent la propriété de leur auteur, sauf accord écrit contraire.
-                        <br>
                         Toute collaboration repose sur le respect mutuel des droits de chacun.
                     </p>
-                    <br>
                 
                     <li id="ethique">Ethique et transparence</li>
                     <p aria-labelledby="ethique">
@@ -350,13 +347,12 @@ function chart(x) {
                 <ol aria-labelledby="droit-title">
                 
                     <li id="propriete">Propriété intellectuelle</li>
-                    <p aria-labelledby="propriete">
-                        Tout le contenu publié sur le site (textes, images, codes, projets, idées, vidéos, schémas, etc.) est protégé par le 
-                        <b>Code de la Propriété Intellectuelle</b>.
-                        <br>
-                        Il appartient exclusivement à 
-                        <b id="cv">LIENHART MICHAEL</b>, sauf mention explicite d'une source externe.
-                    </p>
+                    <div aria-labelledby="propriete">
+                        <p>Tout le contenu publié sur le site (textes, images, codes, projets, idées, vidéos, schémas, etc.) est protégé par le 
+                        <b>Code de la Propriété Intellectuelle</b>.</p>
+                        <p>Il appartient exclusivement à 
+                        <b id="cv">LIENHART MICHAEL</b>, sauf mention explicite d'une source externe.</p>
+                    </div>
                 
                     <li id="licence">Licence d'utilisation</li>
                     <p aria-labelledby="licence">
@@ -381,6 +377,11 @@ function chart(x) {
             `;
             break;
         case 5:
+            //const body = document.querySelector('body');
+            //body.insertAdjacentHTML('afterbegin', header());
+            chart = `${header()}`;
+            break;
+        case 6:
             chart = `
                 <div class="container bordereau" role="region" aria-labelledby="construction-title" aria-describedby="construction-message">
                 
@@ -396,6 +397,7 @@ function chart(x) {
                 
                 </div>
             `;
+            break;
     }
     main.innerHTML = chart;
 }
@@ -407,6 +409,7 @@ function page(x) {
     switch (x) {
         case 1:
             page = `
+                ${header()}
                 <h1 id="presentation-title"><u>Présentation</u></h1>
 
                 <br>
@@ -476,6 +479,7 @@ function page(x) {
             break;
         case 2:
             page = `
+                ${header()}
                 <h1 id="parcours-title"><u>Parcours</u></h1>
 
                 <br>
@@ -570,6 +574,7 @@ function page(x) {
             break;
         case 3:
             page = `
+                ${header()}
                 <h1 id="projets-title"><u>Projets</u></h1>
 
                 <br>
@@ -634,6 +639,7 @@ function page(x) {
             break;
         case 4:
             page = `
+                ${header()}
                 <h1 id="contact-title"><u>Contact</u></h1>
 
                 <br>
@@ -725,7 +731,7 @@ function page(x) {
                                 <img src="https://lienhartm.github.io/lm/image/buymeacoffee.png" alt="Logo Buy Me A Coffee" width="400" aria-hidden="false">
                             </figure>
         
-                            <p class="message" aria-labelledby="support-title">
+                            <p class="support" aria-labelledby="support-title">
                                 Ce site est développé de manière indépendante.
                                 <br class="return">
                                 Si mon travail vous est utile, vous pouvez me soutenir en m’offrant un café ☕
@@ -736,12 +742,12 @@ function page(x) {
                             </p>
                         </div>
                         
-                        <div class="caption">
-                            <a href="https://www.buymeacoffee.com/ewzwS4LfCh" target="_blank" aria-label="Soutenir l'auteur via Buy Me A Coffee">
-                                <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important; width: 200px !important;">
-                            </a>
-                        </div>
-                        
+                    </div>
+
+                    <div class="caption">
+                        <a href="https://www.buymeacoffee.com/ewzwS4LfCh" target="_blank" aria-label="Soutenir l'auteur via Buy Me A Coffee">
+                            <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important; width: 200px !important;">
+                        </a>
                     </div>
                 
                 </section>
@@ -784,6 +790,7 @@ function footer() {
                 <nav id="chart-2" role="link" aria-label="Conditions d'utilisation">Conditions d'utilisation</nav>
                 <nav id="chart-3" role="link" aria-label="Charte partenariat">Charte partenariat</nav>
                 <nav id="chart-4" role="link" aria-label="Droit d'auteur">Droit d'auteur</nav>
+                <nav id="chart-5" role="link" aria-label="WebMaster">WebMaster</nav>
             </nav>
         
             <h5 id="chart-5">
@@ -798,7 +805,48 @@ function footer() {
 function main() {
     return `
         <div id="content" role="region" aria-label="Logo principal du site">
-            ${logo(10)}
+            <h2>Votre partenaire informatique au quotidien !</h2>
+            <p>Besoin d'un dépannage, d'un nouveau site internet ou d'une formation ? En tant qu'auto-entrepreneur passionné, je mets mon expertise au service des particuliers et des associations pour vous simplifier le numérique.</p>
+            <br>
+            <div class="chap">💻
+            <h3 class="service">Mes Services</h3>
+            </div>
+            <ul class="present">
+                <li><b>Conseil & Achat :</b> Aide au choix de vos équipements selon vos besoins et votre budget.</li>
+                <li><b>Installation & Configuration :</b> Mise en service de vos ordinateurs, imprimantes, réseaux internet et logiciels.</li>
+                <li><b>Maintenance & Dépannage :</b> Assistance rapide, suppression de virus, optimisation et sauvegarde de vos données.</li>
+                <li><b>Formations & Cours :</b> Initiation ou perfectionnement aux outils numériques (bureautique, internet, sécurité) adaptés à votre rythme.</li>
+                <li><b>Solutions Digitales :</b> Conception, développement et gestion de vos sites web ou outils numériques sur-mesure.</li>
+            </ul>
+            <br>
+            <div class="chap">🤝
+            <h3 class="confiance">Pourquoi me faire confiance ?</h3>
+            </div>
+            <ul class="present">
+                <li><b>Proximité & Écoute :</b> Un interlocuteur unique et des conseils adaptés à votre rythme.</li>
+                <li><b>Tarifs Clairs :</b> Des prestations adaptées aux budgets des particuliers et des associations.</li>
+                <li><b>Réactivité :</b> Une intervention rapide à domicile ou à distance.</li>
+            </ul>
+
+            <br>
+
+            <div class="container bordereau" role="region" aria-labelledby="construction-title" aria-describedby="construction-message">
+    
+                <div class="icon" aria-hidden="true">&#128679;</div> <!-- Icône décorative -->
+            
+                <h2 id="construction-title">Le choix de la sérénité numérique</h2>
+            
+                <p>Parce que nous méritons tous une informatique qui fonctionne et le savoir pour rester autonome.</p>
+            
+                <div class="message" id="construction-message">
+                    Merci de votre confiance !
+                </div>
+            </div>
+            <br>
+            <div class="chap contact">📞
+            <h3 class="contact">Contactez-moi dès aujourd'hui pour un devis gratuit !</h3>
+            </div>
+                <a href="mailto:webmestrelienhartmichael.com">Envoyer un courriel de prise de contact.</a>
         </div>
     `;
 }

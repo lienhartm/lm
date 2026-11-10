@@ -59,7 +59,7 @@ p {
     font-size: 1.2em;
     background-color: #fff;
     color: #404040;
-    letter-spacing: 2px;
+    letter-spacing: 0px;
 }
 
 .border-left {
@@ -74,17 +74,21 @@ p {
 
 .icon {
     font-size: 100px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 153, 0.25);
     color: #ff6347;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
-.message {
+.message, support {
     font-size: 1.1em;
     background-color: #fff;
     color: #404040;
     margin: 45px 60px;
-    line-height: 24px;
+    line-height: 0px;
+}
+
+p.support {
+    line-height: 20px;
 }
 
 .logo {
@@ -253,7 +257,7 @@ footer {
 }
 
 .blog>ul {
-    margin-left: 120px;
+    /*margin-left: 120px;*/
 }
 
 /* animation */
@@ -324,8 +328,8 @@ main {
 }
 
 .bordereau {
-    background-color: #fff;
     color: #000;
+    background-color: rgba(255, 255, 153, 0.25);
     background-image:
         /* top */
         linear-gradient(to right, black 10%, yellow 10% 20%, black 20% 30%, yellow 30% 40%, black 40% 50%, yellow 50% 60%, black 60% 70%, yellow 70% 80%, black 80% 90%, yellow 90% 100%),
@@ -345,7 +349,7 @@ main {
         100% 10px,
         /* bottom: full width, 4px high */
         10px 100%;
-    /* left: 4px wide, full height */
+        /* left: 4px wide, full height */
 
     background-position:
         top left,
@@ -355,10 +359,17 @@ main {
         bottom left,
         /* bottom bar */
         top left;
-    /* left bar */
+        /* left bar */
 
     border: 1px solid #ccc;
-    padding: 50px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.bordereau > h2, .bordereau > p, .bordereau > .icon, div.message {
+  background-color: transparent !important;
 }
 
 span:before {
@@ -372,6 +383,32 @@ h2, li {
 
 li {
     letter-spacing: 1px;
+}
+
+ul.present > li {
+    font-weight: inherit;
+}
+
+.chap {
+    text-align: center;
+    font-size: 100px;
+}
+
+.chap > h3 {
+    font-size: 30px;
+}
+
+.chap.contact {
+    font-size: 75px;
+    margin-top: 50px;
+}
+
+h3.service {
+    padding-top: 16px;
+}
+
+h3.contact {
+    padding-top: 8px;
 }
 
 .chart {
@@ -463,6 +500,13 @@ figure {
     padding-inline: 10px;
 }
 
+@media only screen and (max-width: 1100px) {
+    header {
+        height: 220px;
+        flex-direction: column;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     div#animate {
         width: 200px;
@@ -473,7 +517,17 @@ figure {
     div#logo {
         height: 180px;
     }
-
+    
+    div#content {
+        padding: 25px;
+        width: 90%;
+        line-height: 28px;
+    }
+    
+    p {
+        font-size: 1em;
+    }
+    
     .cv-action, .support {
         flex-direction: column;
     }
@@ -486,7 +540,7 @@ figure {
         padding: 0;
     }
 
-    .contact>div>p, form {
+    section.contact>div>p, form {
         line-height: normal;
     }
 
@@ -548,6 +602,12 @@ figure {
 
     figcaption {
         margin-left: -20px;
+    }
+    
+    div.message {
+        margin: 45px 0px;
+        line-height: 16px;
+        width: 100%;
     }
 
     p.message {
