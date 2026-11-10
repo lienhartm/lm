@@ -1,7 +1,21 @@
 'use strict'
 
+const googleTagManager = `
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NF539PK4"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden">
+    </iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+`;
+
 window.onload = function () {
     document.body.innerHTML = `
+        ${googleTagManager}
         <div id="scene" role="region" aria-label="Scène principale contenant la carte avec le logo">
             <div id="card" role="group" aria-label="Carte affichant le logo">
                 ${logo(10)}
@@ -12,6 +26,7 @@ window.onload = function () {
         const body = document.querySelector('body');
         body.style.background = "#F8F8F8";
         body.innerHTML = `
+            ${googleTagManager}
             <a href="javascript:location.reload();" aria-label="Website logo">
                 ${logo(4)}
             </a>
@@ -380,23 +395,6 @@ function chart(x) {
             //const body = document.querySelector('body');
             //body.insertAdjacentHTML('afterbegin', header());
             chart = `${header()}`;
-            break;
-        case 6:
-            chart = `
-                <div class="container bordereau" role="region" aria-labelledby="construction-title" aria-describedby="construction-message">
-                
-                    <div class="icon" aria-hidden="true">&#128679;</div> <!-- Icône décorative -->
-                
-                    <h2 id="construction-title">Le choix de la sérénité numérique</h2>
-                
-                    <p>Parce que nous méritons tous une informatique qui fonctionne et le savoir pour rester autonome.</p>
-                
-                    <div class="message" id="construction-message">
-                        Merci de votre confiance !
-                    </div>
-                
-                </div>
-            `;
             break;
     }
     main.innerHTML = chart;
