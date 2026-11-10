@@ -15,7 +15,6 @@ const googleTagManager = `
 
 window.onload = function () {
     document.body.innerHTML = `
-        ${googleTagManager}
         <div id="scene" role="region" aria-label="Scène principale contenant la carte avec le logo">
             <div id="card" role="group" aria-label="Carte affichant le logo">
                 ${logo(10)}
