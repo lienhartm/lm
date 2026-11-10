@@ -76,7 +76,7 @@ p {
     font-size: 100px;
     background-color: #fff;
     color: #ff6347;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 .message {
@@ -84,7 +84,7 @@ p {
     background-color: #fff;
     color: #404040;
     margin: 45px 60px;
-    line-height: 24px;
+    line-height: 0px;
 }
 
 .logo {
@@ -358,7 +358,10 @@ main {
     /* left bar */
 
     border: 1px solid #ccc;
-    padding: 50px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 span:before {
