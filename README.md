@@ -1,30 +1,43 @@
 ># WebSite LM
 >
 >Votre partenaire informatique au quotidien !
+>
 >Besoin d'un dépannage, d'un nouveau site internet ou d'une formation ? En tant qu'auto-entrepreneur passionné, je mets mon expertise au service des particuliers et des associations pour vous simplifier le numérique.
 >
 >💻 Mes Services
 >
 >• Conseil & Achat : Aide au choix de vos équipements selon vos besoins et votre budget.
+>
 >• Installation & Configuration : Mise en service de vos ordinateurs, imprimantes, réseaux internet et logiciels.
+>
 >• Maintenance & Dépannage : Assistance rapide, suppression de virus, optimisation et sauvegarde de vos données.
+>
 >• Formations & Cours : Initiation ou perfectionnement aux outils numériques (bureautique, internet, sécurité) adaptés à votre rythme.
+>
 >• Solutions Digitales : Conception, développement et gestion de vos sites web ou outils numériques sur-mesure.
 >
 >🤝 Pourquoi me faire confiance ?
 >
 >• Proximité & Écoute : Un interlocuteur unique et des conseils adaptés à votre rythme.
+>
 >• Tarifs Clairs : Des prestations adaptées aux budgets des particuliers et des associations.
+>
 >• Réactivité : Une intervention rapide à domicile ou à distance.
+>
 >📞 Contactez-moi dès aujourd'hui pour un devis gratuit !
+>
 >• Téléphone : [Votre Numéro]
+>
 >• E-mail : [Votre Adresse Email]
+>
 >• Site Web : [Votre Site Internet / Page Pro]
 >
 > ---
 >
 >Le choix de la sérénité numérique
+>
 >Parce que nous méritons tous une informatique qui fonctionne et le savoir pour rester autonome.
+>
 >Merci de votre confiance !
 >
 > ---
