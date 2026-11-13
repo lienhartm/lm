@@ -829,7 +829,7 @@ function main() {
             <div class="chap contact">📞
             <h3 class="contact">Contactez-moi dès aujourd'hui pour un devis gratuit !</h3>
             </div>
-                <a href="mailto:webmestrelienhartmichael.com">Envoyer un courriel de prise de contact.</a>
+                <a href="mailto:webmestrelienhartmichael@gmail.com">Envoyer un courriel de prise de contact.</a>
         </div>
     `;
 }
